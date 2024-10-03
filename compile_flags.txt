@@ -1,0 +1,7 @@
+-I./main
+-I./Scanner
+-I./Chunk
+-I./VM
+-I./Parser
+-I.
+--std=c++20
