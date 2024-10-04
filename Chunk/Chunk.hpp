@@ -13,6 +13,7 @@ enum Opcode
     OP_SIN,
     OP_COS,
     OP_TAN,
+    OP_SQRT,
     OP_LN,
     OP_CONSTANT,
     OP_PRINT

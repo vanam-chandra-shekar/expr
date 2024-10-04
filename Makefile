@@ -6,7 +6,7 @@ LANGUAGE = cpp
 PREPROCESSER = WINDOWS 
 LIBRARIES = 
 
-TARGET = main
+TARGET = cal
 
 CXX = g++
 
@@ -33,7 +33,7 @@ endif
 
 ifeq ($(CONFIG),NDEBUG)
 	DEPFLAGS = -MP -MD
-	OPT = O2
+	OPT = -O2
 	CXXFLAGS = $(INCLUDEDIR) $(DEPFLAGS) $(OPT) $(PREPROCESSER)
 endif
 

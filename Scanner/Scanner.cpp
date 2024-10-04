@@ -9,6 +9,7 @@ static const std::unordered_map<std::string, TokenType> keywords
     {"sin" , TSIN},
     {"cos" , TCOS},
     {"tan" , TTAN},
+    {"sqrt",TSQRT},
     {"ln",TLN},
     {"PI" , TPI},
     {"E",TE}

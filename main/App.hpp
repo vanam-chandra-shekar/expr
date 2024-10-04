@@ -2,7 +2,6 @@
 #include <string>
 
 #include "Parser.hpp"
-#include "Scanner.hpp"
 #include "vm.hpp"
 
 class App
@@ -10,6 +9,7 @@ class App
 
 public:
   static void runPromt();
+  static void run(const std::string& src);
   static void error(int pos , const std::string_view& mssg);
   static void error(Token token , const std::string_view& mssg);
 
@@ -18,7 +18,6 @@ private:
 
   static vm Vm;
   static Parser parser;
-  static void run(const std::string& src);
   static void report(int pos ,const std::string_view& where ,const std::string_view&  mssg);
 
 

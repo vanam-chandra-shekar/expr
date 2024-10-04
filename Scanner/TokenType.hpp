@@ -11,6 +11,7 @@ enum TokenType
     TSIN,
     TCOS,
     TTAN,
+    TSQRT,
     TLN,
     TPI,
     TE,

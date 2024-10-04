@@ -146,6 +146,20 @@ void vm::run()
                 break;
             }
 
+            case OP_SQRT:
+            {
+                double a = stack.top();
+                stack.pop();
+
+                if(a < 0)
+                {
+                    throw RunTimeException("Sqrt of "+std::to_string(a)+" is not a real number.");
+                }
+
+                stack.push(std::sqrt(a));
+                break;
+            }
+
             case OP_CONSTANT:
             {
                 double constant = READ_CONSTANT();

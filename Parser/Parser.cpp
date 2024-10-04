@@ -122,6 +122,13 @@ void Parser::func(Chunk &out)
         return;
     }
 
+    if(match(TSQRT))
+    {
+        primary(out);
+        out.writeChunk(OP_SQRT);
+        return;
+    }
+
     primary(out);
 
 }
